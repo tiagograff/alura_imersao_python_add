@@ -1,5 +1,4 @@
 import pandas as pd
-import plotly.express as px
 # lendo arquivo ações
 arquivo_acoes = './alura/alura_imersao_python_add/dados/acoes.csv'
 df_acoes = pd.read_csv(arquivo_acoes)
@@ -118,12 +117,4 @@ df_principal_saldo_reset = df_principal_saldo().reset_index()
 # print(md_subiu)
 # print(md_desceu)
 # print(df_principal_segmento)
-print(df_principal_saldo_reset)
-
-
-## gráficos ##
-
-
-fig1 = px.bar(df_principal_saldo_reset, x='resultado', y='variacao_rs',
-              text='variacao_rs', title='variação em reais por resultado')
-fig1.show()
+# print(df_principal_saldo_reset)
